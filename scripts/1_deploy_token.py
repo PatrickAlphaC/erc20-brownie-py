@@ -8,4 +8,5 @@ initial_supply = Web3.toWei(1000, "ether")
 def main():
     account = get_account()
     our_token = OurToken.deploy(initial_supply, {"from": account})
-    print(our_token.name())
+    print(OurToken[-1].name)
+)
